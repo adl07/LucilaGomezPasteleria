@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.icon1{
+    color: $color_wpp_ig;
+    font-size: 35px;
+    right: 45%;
+    top: 20%;
+    position: absolute;
+}
+.icon1:hover{
+    color: black;
+    background-color: transparent;
+}
+.icon2{
+    color: $color_wpp_ig;
+    font-size: 35px;
+    right: 20%;
+    top: -13%;
+    position: relative;
+}
+.icon2:hover{
+    color: black;
+    background-color: transparent;
+}
+.efecto{
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .095);
+    transition: all 300ms;
+    background-color: transparent;
+}
+.efecto:hover{
+    transform: scale(1.05);
+    opacity: 75%;
+}
+.botonesBackHome{
+    width: 150px;
+    background-color: transparent;
+    border: none;
+}
+.botonesBackHome:hover{
+    color: $color_botones;
+    background-color: transparent;
+}
+.botonesBackHomeContacto{
+    width: 150px;
+    background-color: transparent;
+    border: none;
+    top: 85%;
+    position: absolute;
+    left: 45.5%;
+}
+.botonesBackHomeContacto:hover{
+    color: $color_letra_botones;
+}
+.illustracion{
+    width: 500px;
+    right: 10%;
+    position: absolute;
+    top: 25%;
+}
+#galletita{
+    transform: translate(10%);
+    animation-name: movimiento;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes movimiento{
+    0%{
+        transform: translateY(-8%) translateX(2%);
+    }
+    100%{
+        transform: translateY(1%);
+    }
+
+}
+.lugar{
+    color: $color_texto;
+    font-size: 16px;
+    top: 40%;
+    position: absolute;
+    left: 5%;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.icon7{
+    color: $color_texto;
+    font-size: 30px;
+    transition: 0s 2ms ease;
+    
+    animation-name: avion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.icon7:hover{
+    color: $color_boton_enviar;
+}
+@keyframes avion{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateY(50%) translateY(25%);
+    }
+}
+        /*Condicional*/
+    $cambio_color: quienes_somos;
+    .contenido3{ 
+                @if $cambio_color == quienes_somos {
+                    color: $color_letra_botones;
+                    font-size: $font-size;
+                }   @else if $cambio_color == contacto {
+                    color: $color_boton_enviar;
+                    font-size: $font-size;
+                }   @else if $cambio_color == nuestros_productos {
+                    color: $color_header;
+                    font-size: $font-size;
+                }  
+    }
+    $estilo_letra: diferente;
+    .contenido2{
+        @if $estilo_letra == predeterminada{
+            font-family: 'Allison', cursive;
+            font-size: 18px;
+        } @else if $estilo_letra == cambio{
+            text-transform: uppercase;
+            font-size: 15px;
+        } @else if $estilo_letra == diferente{
+            color: $color_boton_enviar;
+            text-transform: initial;
+            font-size: 20px;
+        }
+    }
+    $estilo_boton: chico;
+    .contenido4{
+        @if $estilo_boton == chico{
+            font-size: 12px;
+            background: linear-gradient(to right,#009FFF, #ec2F4B);
+        } @else if $estilo_boton == mediano{
+            font-size: 15px;
+            background: linear-gradient(to right,#00F260, #0575E6);
+        } @else if $estilo_boton == grande{
+            font-size: 20px;
+            background: linear-gradient(to right,#C02425, #F0CB35);
+        }
+    }   
+        /*Each*/
+    $dimension: 150px;
+    @each $tortas in imagen1, imagen2, imagen3, imagen4{
+            .#{$tortas}-variedad {
+                width: $dimension *3;
+                height: 120px;
+                background-image: url("../imagenes/#{$tortas}.jpg");
+                background-position: center center;
+                background-size: cover;
+                position:relative;
+                right: -2.5%;
+                margin: 3px;
+            }
+    }
+        /*Maps*/
+    $redes:(instagram:$color_letra_botones, whatsapp:$color_boton_enviar);
+    @each $clave, $valor in $redes{
+        .boton21-#{$clave} {
+            color: $valor;
+        }
+    }
+    $nombre-index:(nombre: $color_letra_botones);
+    @each $clave, $valor in $nombre-index {
+        .boton22-#{$clave}{
+            color: $valor;
+        }
+    }
+    $fondo-contacto:(nombre:$color-fondo-contacto, email:$color-fondo-contacto, opciones:$color-fondo-contacto, comentario:$color-fondo-contacto);
+    @each $clave, $valor in $fondo-contacto {
+        .boton23-#{$clave}{
+            background-color: $valor;
+        }
+    }
+        /*Extend*/
+    .estiloDeTexto{
+        font-family: 'Rampart One', cursive;
+        font-size: 15px;
+        color: $color_texto;
+    }
+    .estiloDeTextoModificado{
+        @extend .estiloDeTexto;
+        font-size: 20px;
+        color: #0353a4;
+        cursor: pointer;
+    }
+    .indexColor{
+        font-size: 40px;
+        color:black
+    }
+    .indexColorModificado{
+        @extend .indexColor;
+        color: $color-index1;
+    }
+    .indexColorModificado2{
+        @extend .indexColor;
+        color: $color-index2;
+        top: 21%;
+    }
+        /*Mixins*/
+    .ubicacion1{
+        color: $color3;
+        top: 35%;
+        position: absolute;
+        left: 5%;
+    }
+        @mixin parametros ($font-size, $font-family) {
+        font-size: $font-size;
+        font-family: $font-family;
+    }
+    .ubi{
+        @extend .ubicacion1;
+        @include parametros($font-size, $font-family); 
+    }
+    .opcionesMenu{
+        color:$color_letra_botones;
+    }
+    @mixin parametros ($font-size, $font-family){
+        font-size: $font-size;
+        font-family: $font-family;
+    }
+    .opcionesMenuIndex{
+        @extend .opcionesMenu;
+        @include parametros($font-size, $font-family);
+    }   
+                /* */
+    .footer-s{
+        color: $color_texto;
+        top: 60%;
+        right: 25%;
+        position: relative;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    .footer-s:hover{
+        color: $color_botones;
+    }
+    .footer-c{
+        color: $color_texto;
+        top: 40%;
+        right: 5%;
+        position: absolute;
+        font-family: 'Barlow Condensed', sans-serif;
+    }

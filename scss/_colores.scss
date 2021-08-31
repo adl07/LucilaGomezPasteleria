@@ -1,0 +1,31 @@
+$color_texto: #6c757d;
+$color_header: #f3c4fb;
+$color_footer: #f3c4fb;
+$color_wpp_ig: #fffcf7;
+$color_botones: #283845;
+$color_letra_botones: #6fffe9;
+$color_boton_enviar: #ffccd5;
+$font-family: 'Abel', sans-serif;;
+$font-size:20px;
+$color3: #7d8597;
+$color-index2: #6a994e;
+$color-index1: #df7373;
+$color-fondo-contacto: #d2b7e5;
+body{
+    background: linear-gradient(to right,#B993D6, #8CA6DB)
+}
+header{
+    color: $color_texto;
+}
+.pie{
+    background-color: $color_footer;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.pie2{
+    background-color: $color_footer;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

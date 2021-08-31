@@ -1,0 +1,67 @@
+@import "colores";
+@import "estructura";
+.texto{
+    color: $color_texto;
+}
+.texto2{
+    top: 3%;
+    left:80%;
+    position: absolute;
+    color: $color_texto;
+}
+.texto2:hover{
+    color: $color_botones;
+}
+.header_menu{
+    color:$color_texto;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.header_menu:hover{
+    color: white;
+}
+.fondo{
+    background-color: $color_header;
+}
+.fuente{
+    font-family: 'Noto Sans', sans-serif;
+}
+.botonDePedido{
+    background-color: $color_botones;
+    border: none;
+    left: 45%;
+    position: absolute;
+    width: 150px;
+    top: 75%;
+    transition: 0 5ms ease;
+}
+.botonDePedido:hover{
+    color: $color_botones;
+    background-color: transparent;
+}
+.botonDeSi{
+    background-color: $color_botones;
+    color: $color_texto;
+}
+.botonDeSi:hover{
+    color:$color_letra_botones;
+    background-color: $color_botones;
+}
+.botonDeNo{
+    background-color: $color_botones;
+    color: $color_texto;
+    border: none;
+}
+.botonDeNo:hover{
+    color:$color_letra_botones;
+    background-color: $color_botones;
+}
+.botonEnviar{
+    background-color: transparent;
+}
+.efectoTexto:hover{
+    color: $color_boton_enviar;
+    cursor: pointer;
+}
+
