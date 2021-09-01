@@ -24,7 +24,7 @@ header {
   color: #fffcf7;
   font-size: 35px;
   right: 45%;
-  top: 20%;
+  top: 95%;
   position: absolute; }
 
 .icon1:hover {
@@ -34,7 +34,7 @@ header {
 .icon2 {
   color: #fffcf7;
   font-size: 35px;
-  right: 20%;
+  right: 25%;
   top: -13%;
   position: relative; }
 
@@ -93,7 +93,7 @@ header {
 .lugar {
   color: #6c757d;
   font-size: 16px;
-  top: 40%;
+  top: 97%;
   position: absolute;
   left: 5%;
   font-family: 'Barlow Condensed', sans-serif; }
@@ -246,7 +246,7 @@ header {
 
 .footer-c {
   color: #6c757d;
-  top: 40%;
+  top: 97%;
   right: 5%;
   position: absolute;
   font-family: 'Barlow Condensed', sans-serif; }
@@ -314,3 +314,10 @@ header {
 .efectoTexto:hover {
   color: #ffccd5;
   cursor: pointer; }
+
+@media screen and (max-width: 1220px){
+  .container-fluid,.fondo{
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+}
