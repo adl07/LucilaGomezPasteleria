@@ -2,6 +2,8 @@
 @import "estructura";
 .texto{
     color: $color_texto;
+    top:30%;
+    position: relative;
 }
 .texto2{
     top: 3%;
@@ -24,13 +26,29 @@
 .fondo{
     background-color: $color_header;
 }
+.fondo2{
+    background-image: url(../imagenes/macarons.jpg);
+    background-size: cover;
+}
+.fondo3{
+    background-image: url(../imagenes/masitas.jpg);
+    background-size: cover;
+}
+.fondo4{
+    background-image: url(../imagenes/pasteleriajpg.jpg);
+    background-size: cover;
+}
+.fondo5{
+    background-image: url(../imagenes/reposteria3.jpg);
+    background-size: cover;
+}
 .fuente{
     font-family: 'Noto Sans', sans-serif;
 }
 .botonDePedido{
     background-color: $color_botones;
     border: none;
-    left: 45%;
+    left: 46%;
     position: absolute;
     width: 150px;
     top: 75%;
@@ -64,4 +82,130 @@
     color: $color_boton_enviar;
     cursor: pointer;
 }
-
+/*@media screen and (max-width: 576px){
+    .texto{
+        font-size: 10px;
+        right: 35%;
+        position: absolute;
+    }
+    .header_menu{
+        font-size: 10px;
+        justify-content: center;
+        display: flex;
+    }
+    .consultas{
+        font-size: 10px;
+        right: 10%;
+        top:3%;
+        position: absolute;
+    }
+    .imagenesrs{
+        height: 400px;
+        width: 500px;
+        right: 9%;
+    }
+    .imagenesrs2{
+        height: 400px;
+        width: 500px;
+        left: 10%;
+        position: absolute;
+    }
+    .lugar{
+        top: 6%;
+        font-size: 10px;
+    }
+    .footer-c{
+        top:6%;
+        font-size: 10px;
+    }
+    .footer-s{
+        top:5%;
+        right: 39%;
+        font-size: 10px;
+        position: absolute;
+    }
+    .icon1{
+        top: 0%;
+        font-size: 25px;
+    }
+    .icon2{
+        top: 0%;
+        font-size: 25px;
+        right: 35%;
+        position: absolute;
+    }
+    footer{
+        height: 100%;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 768px){
+    .texto{
+        font-size: 13px;
+        right: 35%;
+        position: absolute;
+    }
+    .header_menu{
+        font-size: 13px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .consultas{
+        font-size: 13px;
+        right: 10%;
+        top:3%;
+        position: absolute;
+    }
+    .imagenesrs{
+        height: 400px;
+        width: 500px;
+        right: 9%;
+    }
+    .imagenesrs2{
+        height: 400px;
+        width: 500px;
+        left: 10%;
+        position: absolute;
+    }
+    .lugar{
+        top: 6%;
+        font-size: 13px;
+    }
+    .footer-c{
+        top:6%;
+        font-size: 13px;
+    }
+    .footer-s{
+        top:5%;
+        right: 39%;
+        font-size: 13px;
+        position: absolute;
+    }
+    .icon1{
+        top: 0%;
+        font-size: 25px;
+    }
+    .icon2{
+        top: 0%;
+        font-size: 25px;
+        right: 35%;
+        position: absolute;
+    }
+    footer{
+        height: 100%;
+        position: absolute;
+    }
+}*/
+.imagenes-index{
+    transition: all 300ms;
+    cursor: pointer;
+}
+.imagenes-index:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ecbcfd;
+}
+.card{
+    background-color: #ecbcfd;
+}

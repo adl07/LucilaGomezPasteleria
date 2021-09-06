@@ -5,9 +5,9 @@
 .icon1{
     color: $color_wpp_ig;
     font-size: 35px;
-    right: 45%;
-    top: 95%;
-    position: absolute;
+    right: 90%;
+    top: 110%;
+    
 }
 .icon1:hover{
     color: black;
@@ -16,9 +16,8 @@
 .icon2{
     color: $color_wpp_ig;
     font-size: 35px;
-    right: 25%;
-    top: -13%;
-    position: relative;
+    top: 90%;
+    left:47%;
 }
 .icon2:hover{
     color: black;
@@ -78,9 +77,9 @@
 .lugar{
     color: $color_texto;
     font-size: 16px;
-    top: 97%;
-    position: absolute;
-    left: 5%;
+    right: 30%;
+    top: 30%;
+    position: relative;
     font-family: 'Barlow Condensed', sans-serif;
 }
 .icon7{
@@ -232,8 +231,8 @@
                 /* */
     .footer-s{
         color: $color_texto;
-        top: 60%;
-        right: 25%;
+        top: 58%;
+        right: 21%;
         position: relative;
         font-family: 'Barlow Condensed', sans-serif;
     }
@@ -242,8 +241,60 @@
     }
     .footer-c{
         color: $color_texto;
-        top: 97%;
-        right: 5%;
+        font-size: 16px;
+        left: 94%;
         position: absolute;
         font-family: 'Barlow Condensed', sans-serif;
+    }
+    .iconNP{
+        @extend .icon1;
+        top: 194%;
+    }
+    .lugarNP{
+        @extend .lugar;
+        top: 197%;
+    }
+    .copiNP{
+        @extend .footer-c;
+        top: 197%;
+    }
+    .lugarQS{
+        @extend .lugar;
+        top: 50%;
+    }
+    .iconQS{
+        @extend .icon1;
+        top: 11%;
+    }
+    .copiQS{
+        @extend .footer-c;
+        top:50%;
+    }
+    .botonQs{
+        @extend .botonesBackHome;
+        top: 20%;
+        position: relative;
+    }
+    .lugarCt{
+        @extend .lugar;
+        top: 50%;
+    }
+    .iconCt{
+        @extend .icon1;
+        top: 11%;
+    }
+    .copiCt{
+        @extend .footer-c;
+        top: 50%;
+    }
+    .botonCt{
+        @extend .botonesBackHome;
+        top: 90.5%;
+        position: absolute;
+    }
+    .categorias-np{
+        cursor: pointer;
+    }
+    .categorias-np:hover{
+        
     }

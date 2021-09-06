@@ -20,23 +20,21 @@ header {
   margin: 0;
   padding: 0; }
 
-.icon1 {
+.icon1, .iconNP, .iconQS, .iconCt {
   color: #fffcf7;
   font-size: 35px;
-  right: 45%;
-  top: 95%;
-  position: absolute; }
+  right: 90%;
+  top: 110%; }
 
-.icon1:hover {
+.icon1:hover, .iconNP:hover, .iconQS:hover, .iconCt:hover {
   color: black;
   background-color: transparent; }
 
 .icon2 {
   color: #fffcf7;
   font-size: 35px;
-  right: 25%;
-  top: -13%;
-  position: relative; }
+  top: 90%;
+  left: 47%; }
 
 .icon2:hover {
   color: black;
@@ -51,12 +49,12 @@ header {
   transform: scale(1.05);
   opacity: 75%; }
 
-.botonesBackHome {
+.botonesBackHome, .botonQs, .botonCt {
   width: 150px;
   background-color: transparent;
   border: none; }
 
-.botonesBackHome:hover {
+.botonesBackHome:hover, .botonQs:hover, .botonCt:hover {
   color: #283845;
   background-color: transparent; }
 
@@ -90,12 +88,12 @@ header {
   100% {
     transform: translateY(1%); } }
 
-.lugar {
+.lugar, .lugarNP, .lugarQS, .lugarCt {
   color: #6c757d;
   font-size: 16px;
-  top: 97%;
-  position: absolute;
-  left: 5%;
+  right: 30%;
+  top: 30%;
+  position: relative;
   font-family: 'Barlow Condensed', sans-serif; }
 
 .icon7 {
@@ -236,23 +234,63 @@ header {
 /* */
 .footer-s {
   color: #6c757d;
-  top: 60%;
-  right: 25%;
+  top: 58%;
+  right: 21%;
   position: relative;
   font-family: 'Barlow Condensed', sans-serif; }
 
 .footer-s:hover {
   color: #283845; }
 
-.footer-c {
+.footer-c, .copiNP, .copiQS, .copiCt {
   color: #6c757d;
-  top: 97%;
-  right: 5%;
+  font-size: 16px;
+  left: 94%;
   position: absolute;
   font-family: 'Barlow Condensed', sans-serif; }
 
+.iconNP {
+  top: 194%; }
+
+.lugarNP {
+  top: 197%; }
+
+.copiNP {
+  top: 197%; }
+
+.lugarQS {
+  top: 50%; }
+
+.iconQS {
+  top: 11%; }
+
+.copiQS {
+  top: 50%; }
+
+.botonQs {
+  top: 20%;
+  position: relative; }
+
+.lugarCt {
+  top: 50%; }
+
+.iconCt {
+  top: 11%; }
+
+.copiCt {
+  top: 50%; }
+
+.botonCt {
+  top: 90.5%;
+  position: absolute; }
+
+.categorias-np {
+  cursor: pointer; }
+
 .texto {
-  color: #6c757d; }
+  color: #6c757d;
+  top: 30%;
+  position: relative; }
 
 .texto2 {
   top: 3%;
@@ -275,13 +313,29 @@ header {
 .fondo {
   background-color: #f3c4fb; }
 
+.fondo2 {
+  background-image: url(../imagenes/macarons.jpg);
+  background-size: cover; }
+
+.fondo3 {
+  background-image: url(../imagenes/masitas.jpg);
+  background-size: cover; }
+
+.fondo4 {
+  background-image: url(../imagenes/pasteleriajpg.jpg);
+  background-size: cover; }
+
+.fondo5 {
+  background-image: url(../imagenes/reposteria3.jpg);
+  background-size: cover; }
+
 .fuente {
   font-family: 'Noto Sans', sans-serif; }
 
 .botonDePedido {
   background-color: #283845;
   border: none;
-  left: 45%;
+  left: 46%;
   position: absolute;
   width: 150px;
   top: 75%;
@@ -315,9 +369,129 @@ header {
   color: #ffccd5;
   cursor: pointer; }
 
-@media screen and (max-width: 1220px){
-  .container-fluid,.fondo{
-    max-width: 1000px;
-    padding: 0 20px;
-  }
+/*@media screen and (max-width: 576px){
+    .texto{
+        font-size: 10px;
+        right: 35%;
+        position: absolute;
+    }
+    .header_menu{
+        font-size: 10px;
+        justify-content: center;
+        display: flex;
+    }
+    .consultas{
+        font-size: 10px;
+        right: 10%;
+        top:3%;
+        position: absolute;
+    }
+    .imagenesrs{
+        height: 400px;
+        width: 500px;
+        right: 9%;
+    }
+    .imagenesrs2{
+        height: 400px;
+        width: 500px;
+        left: 10%;
+        position: absolute;
+    }
+    .lugar{
+        top: 6%;
+        font-size: 10px;
+    }
+    .footer-c{
+        top:6%;
+        font-size: 10px;
+    }
+    .footer-s{
+        top:5%;
+        right: 39%;
+        font-size: 10px;
+        position: absolute;
+    }
+    .icon1{
+        top: 0%;
+        font-size: 25px;
+    }
+    .icon2{
+        top: 0%;
+        font-size: 25px;
+        right: 35%;
+        position: absolute;
+    }
+    footer{
+        height: 100%;
+        position: absolute;
+    }
 }
+@media screen and (max-width: 768px){
+    .texto{
+        font-size: 13px;
+        right: 35%;
+        position: absolute;
+    }
+    .header_menu{
+        font-size: 13px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .consultas{
+        font-size: 13px;
+        right: 10%;
+        top:3%;
+        position: absolute;
+    }
+    .imagenesrs{
+        height: 400px;
+        width: 500px;
+        right: 9%;
+    }
+    .imagenesrs2{
+        height: 400px;
+        width: 500px;
+        left: 10%;
+        position: absolute;
+    }
+    .lugar{
+        top: 6%;
+        font-size: 13px;
+    }
+    .footer-c{
+        top:6%;
+        font-size: 13px;
+    }
+    .footer-s{
+        top:5%;
+        right: 39%;
+        font-size: 13px;
+        position: absolute;
+    }
+    .icon1{
+        top: 0%;
+        font-size: 25px;
+    }
+    .icon2{
+        top: 0%;
+        font-size: 25px;
+        right: 35%;
+        position: absolute;
+    }
+    footer{
+        height: 100%;
+        position: absolute;
+    }
+}*/
+.imagenes-index {
+  transition: all 300ms;
+  cursor: pointer; }
+
+.imagenes-index:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ecbcfd; }
+
+.card {
+  background-color: #ecbcfd; }
