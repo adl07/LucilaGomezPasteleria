@@ -17,11 +17,11 @@
 <body>
     <header class="container-fluid">
       <div class="row fondo">
-        <div class="col-md-4">
+        <div class="col-md-4 pt-3 text-start">
           <p class="texto">Lucila Gomez Pasteleria</p>
         </div>
         <div class="col-md-4">
-          <ul class="nav justify-content-center p-3 mb-2 flex-column flex-md-row">
+          <ul class="nav justify-content-center p-3 mb-2 flex-column flex-md-row"> 
             <li class="nav-item">
                 <a class="nav-link header_menu" aria-current="page" href="quienessomos.html">Quienes Somos</a>
             </li>
@@ -33,13 +33,13 @@
             </li>
       </ul>
       </div>
-      <div class="col-md-4">
-        <a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D541161539288&e=ATMs9mnyw1sLnNjqaUm3YpBSS4P-5PN3BG9BTin1qnbTIO50ZrHGIHC37Shcc-QZxHu0Ff6Elgex4-5CjiMKhOlwf84NuzIp&s=1" target="_blank" class="texto2">Para consultas y reservas</a>
+      <div class="col-md-4 pt-3 text-end"> 
+        <a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D541161539288&e=ATMs9mnyw1sLnNjqaUm3YpBSS4P-5PN3BG9BTin1qnbTIO50ZrHGIHC37Shcc-QZxHu0Ff6Elgex4-5CjiMKhOlwf84NuzIp&s=1" target="_blank" class="texto">Para consultas y reservas</a>
       </div>
   </div>
   </header>   
-    <main class="container">
-      <section>
+    <main>
+      <section class="container-fluid">
         <div class="row justify-content-center p-5 flex-column flex-md-row">
           <div class="col-md-2 media">
             <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
@@ -50,8 +50,7 @@
         </div> 
         <div class="row justify-content-center p-5 mediaMenu d-flex">
             <div class="form-floating col-md-4 d-flex">
-                <select class="form-select text-center fs-5 p-3 colorDeFondo" id="Menú" aria-label="Menú" >
-                  <option selected>Menú</option>
+                <select class="form-select text-center p-3 colorDeFondo" id="Menu" aria-label="Menu" >
                   <option value="1">Chessecake</option>
                   <option value="2">Chocotorta</option>
                   <option value="3">Mix</option>
@@ -61,7 +60,7 @@
                   <option value="7">Tortas tematicas</option>
                   <option value="8">Cupcakes</option>
                   <option value="9">Tortas</option>
-                  <option value="9">Alfajores</option>
+                  <option value="10">Alfajores</option>
                 </select>
             </div>
         </div>
@@ -76,43 +75,43 @@
               <a href="#"><i class="fas fa-paper-plane icon7"></i></a>
           </button>
         </div>
-        <div class="row col-md-12 justify-content-center">
-          <a href="index.html" button type="button" class="btn btn-primary btn-sm text-center botonQs" style="top: 85%; position: absolute;" onclick="this.blur();">Volver al home</a>
-        </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pt-5">
         <button type="button" class="btn btn-primary col-md-1 botonDePedido" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Cancelar Pedido
         </button>
+        <div class="row col-md-12 justify-content-center pt-5">
+          <a href="index.html" button type="button" class="btn btn-primary btn-sm text-center botonQs"onclick="this.blur();">Volver al home</a>
+        </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
-          <div class="modal-content">
+            <div class="modal-content">
           <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Desea cancelar su pedido?</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
           </div>
-          <div class="modal-footer">
+              <div class="modal-footer">
           <button type="button" class="btn btn-secondary botonDeSi" data-bs-dismiss="modal">Si</button>
           <button type="button" class="btn btn-primary botonDeNo">No,volver al menú</button>
-          </div>
-          </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     </main>
-    <footer class="container-fluid pie"> 
+    <footer class="container-fluid"> 
       <div class="row fondo"> 
-        <div class="col-md-3 fs-2 text-center p-3"><aside class="lugar">Quilmes-Buenos Aires</aside></div>
-              <div class="col-md-2 fs-2 p-1" style="left: 23%; position: relative;">
+        <div class="col-md-4 fs-2 text-start p-3"><p class="lugar">Quilmes-Buenos Aires</p></div>
+              <div class="col-md-4 fs-2 p-3 text-center">
                   <a href="https://www.instagram.com/lucilagomezpasteleria/?hl=es-la" target="_blank"><i class="fab fa-instagram icon1"></i></a>
                   <a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D541161539288&e=ATMs9mnyw1sLnNjqaUm3YpBSS4P-5PN3BG9BTin1qnbTIO50ZrHGIHC37Shcc-QZxHu0Ff6Elgex4-5CjiMKhOlwf84NuzIp&s=1" target="_blank"><i class="fab fa-whatsapp icon2"></i></a>
               </div>
-                <div class="col-md-3 text-center p-4"><aside class="footer-c">©AdrielAlegre</aside></div>
+              <div class="col-md-4 text-end p-3"><p class="footer-c">©AdrielAlegre</p></div>
         </div>
         <div class="row fondo">
-          <div class="col-md-12 text-center" style="font-family:'Barlow Condensed', sans-serif; color: #6c757d;"><p>Seguinos</p></div>
+          <div class="col-md-12 text-center"><p class="footer-Seguinos">Seguinos</p></div>
         </div>
     </footer>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>

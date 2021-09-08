@@ -2,16 +2,8 @@
 @import "estructura";
 .texto{
     color: $color_texto;
-    top:30%;
-    position: relative;
 }
-.texto2{
-    top: 3%;
-    left:80%;
-    position: absolute;
-    color: $color_texto;
-}
-.texto2:hover{
+.texto:hover{
     color: $color_botones;
 }
 .header_menu{
@@ -48,10 +40,7 @@
 .botonDePedido{
     background-color: $color_botones;
     border: none;
-    left: 46%;
-    position: absolute;
-    width: 150px;
-    top: 75%;
+    width: 150px; 
     transition: 0 5ms ease;
 }
 .botonDePedido:hover{
@@ -82,6 +71,19 @@
     color: $color_boton_enviar;
     cursor: pointer;
 }
+.imagenes-index{
+    transition: all 300ms;
+    cursor: pointer;
+}
+.imagenes-index:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ecbcfd;
+}
+.card{
+    background-color: #ecbcfd;
+}
+
 /*@media screen and (max-width: 576px){
     .texto{
         font-size: 10px;
@@ -197,15 +199,140 @@
         position: absolute;
     }
 }*/
-.imagenes-index{
-    transition: all 300ms;
-    cursor: pointer;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 500px) {
+    .header_menu{
+        font-size: 10px;
+        text-align: center;
+    }
+    header{
+        font-size: 10px;
+    }
+    .logoTarjeta{
+        width: 48px;
+    }
+    .logoMercadoPago{
+        width: 30%;
+    }
+    .lugar{
+        text-align: center;
+    }
+    .footer-c{
+        text-align: center;
+    }
+    .textoIndx{
+        font-size: 12px;
+    }
+    .imagenes-index{
+    width: 15%;
+    }
+    .imagenKeep{
+        width: 50%;
+        text-align: center;
+    }
+    .textoUbicacion{
+        font-size: 12px;
+    }
+    .illustracion{
+        width: 300px;
+        text-align: center;
+    }
+    .logoMercadoPago{
+        width: 12%;
+    }
+    .botonDePedido{
+        width: 110px;
+        font-size: 12px;
+    }
+    .icon7{
+        font-size: 25px;
+    }
+    .form-select{
+        font-size: 15px;
+    }
 }
-.imagenes-index:hover{
-    transform: scale(1.05);
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-    background-color: #ecbcfd;
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    header{
+        font-size: 12px;
+    }
+    .header_menu{
+        font-size: 12px;
+    }
+    footer{
+        font-size: 14px;
+    }
+    .logoTarjeta{
+        width: 64px;
+    }
+    .illustracion{
+        width: 200px;
+    }
+    .logoMercadoPago{
+        width: 12%;
+    }
+    .botonDePedido{
+        width: 110px;
+        font-size: 12px;
+    }
+    .icon7{
+        font-size: 25px;
+    }
+
 }
-.card{
-    background-color: #ecbcfd;
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    header{
+        font-size: 12px;
+    }
+    .header_menu{
+        font-size: 12px;
+    }
+    footer{
+        font-size: 14px;
+    }
+    .illustracion{
+        width: 300px;
+    }
+    .logoMercadoPago{
+        width: 13%;
+    }
+    .botonDePedido{
+        width: 120px;
+        font-size: 12px;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+        header{
+            font-size: 15px;
+        }
+        .header_menu{
+            font-size: 15px;
+        }
+        .footer-c{
+            text-align: end;
+        }
+        .lugar{
+            text-align: start;
+        }
+        .textoIndx{
+            font-size: 15px;
+        } 
+        .illustracion{
+            width: 400px;
+        }
+        .textoUbicacion{
+            font-size: 15px;
+        }
+        .imagenKeep{
+            width: 50%;
+        }
+        .logoMercadoPago{
+            width: 10%;
+        } 
 }

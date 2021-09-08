@@ -22,7 +22,7 @@ header {
 
 .icon1, .iconNP, .iconQS, .iconCt {
   color: #fffcf7;
-  font-size: 35px;
+  font-size: 30px;
   right: 90%;
   top: 110%; }
 
@@ -32,7 +32,7 @@ header {
 
 .icon2 {
   color: #fffcf7;
-  font-size: 35px;
+  font-size: 30px;
   top: 90%;
   left: 47%; }
 
@@ -72,7 +72,6 @@ header {
 .illustracion {
   width: 500px;
   right: 10%;
-  position: absolute;
   top: 25%; }
 
 #galletita {
@@ -90,10 +89,7 @@ header {
 
 .lugar, .lugarNP, .lugarQS, .lugarCt {
   color: #6c757d;
-  font-size: 16px;
-  right: 30%;
-  top: 30%;
-  position: relative;
+  font-size: 15px;
   font-family: 'Barlow Condensed', sans-serif; }
 
 .icon7 {
@@ -235,18 +231,18 @@ header {
 .footer-s {
   color: #6c757d;
   top: 58%;
-  right: 21%;
-  position: relative;
   font-family: 'Barlow Condensed', sans-serif; }
 
 .footer-s:hover {
   color: #283845; }
 
+.footer-Seguinos {
+  color: #6c757d;
+  font-size: 15px; }
+
 .footer-c, .copiNP, .copiQS, .copiCt {
   color: #6c757d;
-  font-size: 16px;
-  left: 94%;
-  position: absolute;
+  font-size: 15px;
   font-family: 'Barlow Condensed', sans-serif; }
 
 .iconNP {
@@ -288,17 +284,9 @@ header {
   cursor: pointer; }
 
 .texto {
-  color: #6c757d;
-  top: 30%;
-  position: relative; }
-
-.texto2 {
-  top: 3%;
-  left: 80%;
-  position: absolute;
   color: #6c757d; }
 
-.texto2:hover {
+.texto:hover {
   color: #283845; }
 
 .header_menu {
@@ -335,10 +323,7 @@ header {
 .botonDePedido {
   background-color: #283845;
   border: none;
-  left: 46%;
-  position: absolute;
   width: 150px;
-  top: 75%;
   transition: 0 5ms ease; }
 
 .botonDePedido:hover {
@@ -368,6 +353,18 @@ header {
 .efectoTexto:hover {
   color: #ffccd5;
   cursor: pointer; }
+
+.imagenes-index {
+  transition: all 300ms;
+  cursor: pointer; }
+
+.imagenes-index:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ecbcfd; }
+
+.card {
+  background-color: #ecbcfd; }
 
 /*@media screen and (max-width: 576px){
     .texto{
@@ -484,14 +481,92 @@ header {
         position: absolute;
     }
 }*/
-.imagenes-index {
-  transition: all 300ms;
-  cursor: pointer; }
+@media (min-width: 500px) {
+  .header_menu {
+    font-size: 10px;
+    text-align: center; }
+  header {
+    font-size: 10px; }
+  .logoTarjeta {
+    width: 48px; }
+  .logoMercadoPago {
+    width: 30%; }
+  .lugar, .lugarNP, .lugarQS, .lugarCt {
+    text-align: center; }
+  .footer-c, .copiNP, .copiQS, .copiCt {
+    text-align: center; }
+  .textoIndx {
+    font-size: 12px; }
+  .imagenes-index {
+    width: 15%; }
+  .imagenKeep {
+    width: 50%;
+    text-align: center; }
+  .textoUbicacion {
+    font-size: 12px; }
+  .illustracion {
+    width: 300px;
+    text-align: center; }
+  .logoMercadoPago {
+    width: 12%; }
+  .botonDePedido {
+    width: 110px;
+    font-size: 12px; }
+  .icon7 {
+    font-size: 25px; }
+  .form-select {
+    font-size: 15px; } }
 
-.imagenes-index:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-  background-color: #ecbcfd; }
+@media (min-width: 768px) {
+  header {
+    font-size: 12px; }
+  .header_menu {
+    font-size: 12px; }
+  footer {
+    font-size: 14px; }
+  .logoTarjeta {
+    width: 64px; }
+  .illustracion {
+    width: 200px; }
+  .logoMercadoPago {
+    width: 12%; }
+  .botonDePedido {
+    width: 110px;
+    font-size: 12px; }
+  .icon7 {
+    font-size: 25px; } }
 
-.card {
-  background-color: #ecbcfd; }
+@media (min-width: 992px) {
+  header {
+    font-size: 12px; }
+  .header_menu {
+    font-size: 12px; }
+  footer {
+    font-size: 14px; }
+  .illustracion {
+    width: 300px; }
+  .logoMercadoPago {
+    width: 13%; }
+  .botonDePedido {
+    width: 120px;
+    font-size: 12px; } }
+
+@media (min-width: 1200px) {
+  header {
+    font-size: 15px; }
+  .header_menu {
+    font-size: 15px; }
+  .footer-c, .copiNP, .copiQS, .copiCt {
+    text-align: end; }
+  .lugar, .lugarNP, .lugarQS, .lugarCt {
+    text-align: start; }
+  .textoIndx {
+    font-size: 15px; }
+  .illustracion {
+    width: 400px; }
+  .textoUbicacion {
+    font-size: 15px; }
+  .imagenKeep {
+    width: 50%; }
+  .logoMercadoPago {
+    width: 10%; } }

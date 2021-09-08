@@ -4,7 +4,7 @@
 }
 .icon1{
     color: $color_wpp_ig;
-    font-size: 35px;
+    font-size: 30px;
     right: 90%;
     top: 110%;
     
@@ -15,7 +15,7 @@
 }
 .icon2{
     color: $color_wpp_ig;
-    font-size: 35px;
+    font-size: 30px;
     top: 90%;
     left:47%;
 }
@@ -55,7 +55,6 @@
 .illustracion{
     width: 500px;
     right: 10%;
-    position: absolute;
     top: 25%;
 }
 #galletita{
@@ -76,10 +75,7 @@
 }
 .lugar{
     color: $color_texto;
-    font-size: 16px;
-    right: 30%;
-    top: 30%;
-    position: relative;
+    font-size: 15px;
     font-family: 'Barlow Condensed', sans-serif;
 }
 .icon7{
@@ -232,18 +228,18 @@
     .footer-s{
         color: $color_texto;
         top: 58%;
-        right: 21%;
-        position: relative;
         font-family: 'Barlow Condensed', sans-serif;
     }
     .footer-s:hover{
         color: $color_botones;
     }
+    .footer-Seguinos{
+        color: $color_texto;
+        font-size: 15px;
+    }
     .footer-c{
         color: $color_texto;
-        font-size: 16px;
-        left: 94%;
-        position: absolute;
+        font-size: 15px;
         font-family: 'Barlow Condensed', sans-serif;
     }
     .iconNP{
@@ -294,7 +290,4 @@
     }
     .categorias-np{
         cursor: pointer;
-    }
-    .categorias-np:hover{
-        
     }
