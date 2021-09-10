@@ -83,7 +83,14 @@
 .card{
     background-color: #ecbcfd;
 }
-
+.textoCategorias{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: $color_botones;
+}
+.textoCategorias:hover{
+    color: $color_wpp_ig;
+}
 /*@media screen and (max-width: 576px){
     .texto{
         font-size: 10px;
@@ -249,6 +256,9 @@
     }
     .form-select{
         font-size: 15px;
+    }
+    .logoLg{
+        width: 20%;
     }
 }
 

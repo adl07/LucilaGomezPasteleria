@@ -366,6 +366,14 @@ header {
 .card {
   background-color: #ecbcfd; }
 
+.textoCategorias {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #283845; }
+
+.textoCategorias:hover {
+  color: #fffcf7; }
+
 /*@media screen and (max-width: 576px){
     .texto{
         font-size: 10px;
@@ -515,7 +523,9 @@ header {
   .icon7 {
     font-size: 25px; }
   .form-select {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .logoLg {
+    width: 20%; } }
 
 @media (min-width: 768px) {
   header {
