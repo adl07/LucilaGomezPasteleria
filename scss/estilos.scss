@@ -299,7 +299,7 @@
         font-size: 12px;
     }
     .header_menu{
-        font-size: 12px;
+        font-size: 15px;
     }
     footer{
         font-size: 14px;
@@ -316,13 +316,29 @@
     }
 }
 
+@media (min-width: 1200px){
+    header{
+        font-size: 15px;
+    }
+    .header_menu{
+        visibility: hidden;
+    }
+    .dropdown{
+        padding: 0;
+        margin: 0;
+        top: -60%;
+    }
+
+}
+
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
+@media (min-width: 1570px) { 
         header{
             font-size: 15px;
         }
         .header_menu{
-            font-size: 15px;
+            font-size: 18px;
+            visibility: visible;
         }
         .footer-c{
             text-align: end;
@@ -344,5 +360,8 @@
         }
         .logoMercadoPago{
             width: 10%;
-        } 
+        }
+        .dropdown{
+            visibility: hidden;
+        }
 }
