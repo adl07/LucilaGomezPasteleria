@@ -6,6 +6,9 @@
 .texto:hover{
     color: $color_botones;
 }
+.textoCyR{
+    @extend .texto;
+}
 .header_menu{
     color:$color_texto;
     text-transform: uppercase;
@@ -206,11 +209,77 @@
         position: absolute;
     }
 }*/
+@media (min-width:350px){
+    .header_menu{
+        font-size: 10px;
+        text-align: center;
+        visibility: hidden;
+    }
+    header{
+        font-size: 10px;
+    }
+    .logoTarjeta{
+        width: 48px;
+    }
+    .logoMercadoPago{
+        width: 50%;
+    }
+    .lugar{
+        text-align: center;
+    }
+    .footer-c{
+        text-align: center;
+    }
+    .textoIndx{
+        font-size: 10px;
+        text-align: justify;
+    }
+    .imagenes-index{
+    width: 15%;
+    }
+    .imagenKeep{
+        width: 50%;
+        text-align: center;
+    }
+    .textoUbicacion{
+        font-size: 12px;
+    }
+    .illustracion{
+        width: 300px;
+        text-align: center;
+    }
+    .logoMercadoPago{
+        width: 12%;
+    }
+    .botonDePedido{
+        width: 110px;
+        font-size: 12px;
+    }
+    .icon7{
+        font-size: 25px;
+    }
+    .form-select{
+        font-size: 15px;
+    }
+    .logoLg{
+        width: 20%;
+    }
+    .dropdown{
+        padding: 0;
+        margin: 0;
+        top: -80%;
+        text-align: center;
+    }
+    .textoCyR{
+        visibility: hidden;
+    }
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 500px) {
     .header_menu{
         font-size: 10px;
         text-align: center;
+        visibility: hidden;
     }
     header{
         font-size: 10px;
@@ -260,6 +329,15 @@
     .logoLg{
         width: 20%;
     }
+    .dropdown{
+        padding: 0;
+        margin: 0;
+        top: -80%;
+        text-align: center;
+    }
+    .textoCyR{
+        visibility: hidden;
+    }
 }
 
 
@@ -270,6 +348,7 @@
     }
     .header_menu{
         font-size: 12px;
+        visibility: hidden;
     }
     footer{
         font-size: 14px;
@@ -290,6 +369,14 @@
     .icon7{
         font-size: 25px;
     }
+    .dropdown{
+        padding: 0;
+        margin: 0;
+        top: -60%;
+    }
+    .textoCyR{
+        visibility:visible;
+    }
 
 }
 
@@ -300,6 +387,7 @@
     }
     .header_menu{
         font-size: 15px;
+        visibility: hidden;
     }
     footer{
         font-size: 14px;
@@ -313,6 +401,11 @@
     .botonDePedido{
         width: 120px;
         font-size: 12px;
+    }
+    .dropdown{
+        padding: 0;
+        margin: 0;
+        top: -60%;
     }
 }
 
@@ -337,7 +430,7 @@
             font-size: 15px;
         }
         .header_menu{
-            font-size: 18px;
+            font-size: 15px;
             visibility: visible;
         }
         .footer-c{
