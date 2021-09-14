@@ -20,13 +20,13 @@ header {
   margin: 0;
   padding: 0; }
 
-.icon1, .iconNP, .iconQS, .iconCt {
+.icon1 {
   color: #fffcf7;
   font-size: 30px;
   right: 90%;
   top: 110%; }
 
-.icon1:hover, .iconNP:hover, .iconQS:hover, .iconCt:hover {
+.icon1:hover {
   color: black;
   background-color: transparent; }
 
@@ -68,12 +68,12 @@ header {
   transform: scale(1.05);
   opacity: 75%; }
 
-.botonesBackHome, .botonQs, .botonCt {
+.botonesBackHome {
   width: 150px;
   background-color: transparent;
   border: none; }
 
-.botonesBackHome:hover, .botonQs:hover, .botonCt:hover {
+.botonesBackHome:hover {
   color: #283845;
   background-color: transparent; }
 
@@ -106,7 +106,7 @@ header {
   100% {
     transform: translateY(1%); } }
 
-.lugar, .lugarNP, .lugarQS, .lugarCt {
+.lugar {
   color: #6c757d;
   font-size: 15px;
   font-family: 'Barlow Condensed', sans-serif; }
@@ -259,49 +259,60 @@ header {
   color: #6c757d;
   font-size: 15px; }
 
-.footer-c, .copiNP, .copiQS, .copiCt {
+.footer-c {
   color: #6c757d;
   font-size: 15px;
   font-family: 'Barlow Condensed', sans-serif; }
 
-.iconNP {
-  top: 194%; }
-
-.lugarNP {
-  top: 197%; }
-
-.copiNP {
-  top: 197%; }
-
-.lugarQS {
-  top: 50%; }
-
-.iconQS {
-  top: 11%; }
-
-.copiQS {
-  top: 50%; }
-
-.botonQs {
-  top: 20%;
-  position: relative; }
-
-.lugarCt {
-  top: 50%; }
-
-.iconCt {
-  top: 11%; }
-
-.copiCt {
-  top: 50%; }
-
-.botonCt {
-  top: 90.5%;
-  position: absolute; }
-
-.categorias-np {
-  cursor: pointer; }
-
+/*.iconNP{
+        @extend .icon1;
+        top: 194%;
+    }
+    .lugarNP{
+        @extend .lugar;
+        top: 197%;
+    }
+    .copiNP{
+        @extend .footer-c;
+        top: 197%;
+    }
+    .lugarQS{
+        @extend .lugar;
+        top: 50%;
+    }
+    .iconQS{
+        @extend .icon1;
+        top: 11%;
+    }
+    .copiQS{
+        @extend .footer-c;
+        top:50%;
+    }
+    .botonQs{
+        @extend .botonesBackHome;
+        top: 20%;
+        position: relative;
+    }
+    .lugarCt{
+        @extend .lugar;
+        top: 50%;
+    }
+    .iconCt{
+        @extend .icon1;
+        top: 11%;
+    }
+    .copiCt{
+        @extend .footer-c;
+        top: 50%;
+    }
+    .botonCt{
+        @extend .botonesBackHome;
+        top: 90.5%;
+        position: absolute;
+    }
+    .categorias-np{
+        cursor: pointer;
+    }*/
 .texto, .textoCyR {
   color: #6c757d; }
 
@@ -388,7 +399,7 @@ header {
 .textoCategorias {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  color: #283845; }
+  color: #fffcf7; }
 
 .textoCategorias:hover {
   color: #fffcf7; }
@@ -517,15 +528,12 @@ header {
     font-size: 10px; }
   .logoTarjeta {
     width: 48px; }
-  .logoMercadoPago {
-    width: 50%; }
-  .lugar, .lugarNP, .lugarQS, .lugarCt {
+  .lugar {
     text-align: center; }
-  .footer-c, .copiNP, .copiQS, .copiCt {
+  .footer-c {
     text-align: center; }
   .textoIndx {
-    font-size: 10px;
-    text-align: justify; }
+    font-size: 10px; }
   .imagenes-index {
     width: 15%; }
   .imagenKeep {
@@ -537,7 +545,7 @@ header {
     width: 300px;
     text-align: center; }
   .logoMercadoPago {
-    width: 12%; }
+    width: 25%; }
   .botonDePedido {
     width: 110px;
     font-size: 12px; }
@@ -553,7 +561,9 @@ header {
     top: -80%;
     text-align: center; }
   .textoCyR {
-    visibility: hidden; } }
+    visibility: hidden; }
+  .textoCategorias {
+    font-size: 15px; } }
 
 @media (min-width: 500px) {
   .header_menu {
@@ -566,9 +576,9 @@ header {
     width: 48px; }
   .logoMercadoPago {
     width: 30%; }
-  .lugar, .lugarNP, .lugarQS, .lugarCt {
+  .lugar {
     text-align: center; }
-  .footer-c, .copiNP, .copiQS, .copiCt {
+  .footer-c {
     text-align: center; }
   .textoIndx {
     font-size: 12px; }
@@ -583,7 +593,7 @@ header {
     width: 300px;
     text-align: center; }
   .logoMercadoPago {
-    width: 12%; }
+    width: 25%; }
   .botonDePedido {
     width: 110px;
     font-size: 12px; }
@@ -614,7 +624,7 @@ header {
   .illustracion {
     width: 200px; }
   .logoMercadoPago {
-    width: 12%; }
+    width: 20%; }
   .botonDePedido {
     width: 110px;
     font-size: 12px; }
@@ -663,9 +673,9 @@ header {
   .header_menu {
     font-size: 15px;
     visibility: visible; }
-  .footer-c, .copiNP, .copiQS, .copiCt {
+  .footer-c {
     text-align: end; }
-  .lugar, .lugarNP, .lugarQS, .lugarCt {
+  .lugar {
     text-align: start; }
   .textoIndx {
     font-size: 15px; }

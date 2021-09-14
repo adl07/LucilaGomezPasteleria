@@ -89,7 +89,7 @@
 .textoCategorias{
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    color: $color_botones;
+    color: $color_wpp_ig;
 }
 .textoCategorias:hover{
     color: $color_wpp_ig;
@@ -221,9 +221,6 @@
     .logoTarjeta{
         width: 48px;
     }
-    .logoMercadoPago{
-        width: 50%;
-    }
     .lugar{
         text-align: center;
     }
@@ -232,7 +229,6 @@
     }
     .textoIndx{
         font-size: 10px;
-        text-align: justify;
     }
     .imagenes-index{
     width: 15%;
@@ -249,7 +245,7 @@
         text-align: center;
     }
     .logoMercadoPago{
-        width: 12%;
+        width: 25%;
     }
     .botonDePedido{
         width: 110px;
@@ -272,6 +268,9 @@
     }
     .textoCyR{
         visibility: hidden;
+    }
+    .textoCategorias{
+        font-size: 15px;
     }
 }
 // Small devices (landscape phones, 576px and up)
@@ -314,7 +313,7 @@
         text-align: center;
     }
     .logoMercadoPago{
-        width: 12%;
+        width: 25%;
     }
     .botonDePedido{
         width: 110px;
@@ -360,7 +359,7 @@
         width: 200px;
     }
     .logoMercadoPago{
-        width: 12%;
+        width: 20%;
     }
     .botonDePedido{
         width: 110px;
