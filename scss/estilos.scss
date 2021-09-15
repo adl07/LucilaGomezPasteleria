@@ -74,18 +74,6 @@
     color: $color_boton_enviar;
     cursor: pointer;
 }
-.imagenes-index{
-    transition: all 300ms;
-    cursor: pointer;
-}
-.imagenes-index:hover{
-    transform: scale(1.05);
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-    background-color: #ecbcfd;
-}
-.card{
-    background-color: #ecbcfd;
-}
 .textoCategorias{
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -337,6 +325,9 @@
     .textoCyR{
         visibility: hidden;
     }
+    .icon10{
+        justify-content: center;
+    }
 }
 
 
@@ -455,5 +446,8 @@
         }
         .dropdown{
             visibility: hidden;
+        }
+        .icon10{
+            
         }
 }

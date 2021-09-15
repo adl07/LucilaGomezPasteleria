@@ -40,6 +40,13 @@
     font-size: 15px;
     text-decoration: none;
 }
+.icon10{
+    font-size: 18px;
+    color: $color_texto;
+}
+.icon10:hover{
+    background: none;
+}
 .opciones:hover{
     color: $color_wpp_ig;
 }
