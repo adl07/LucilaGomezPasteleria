@@ -260,6 +260,9 @@
     .textoCategorias{
         font-size: 15px;
     }
+    .imagenFondo{
+        width: 50%;
+    }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 500px) {
@@ -328,6 +331,9 @@
     .icon10{
         justify-content: center;
     }
+    .imagenFondo{
+        width: 30%;
+    }
 }
 
 
@@ -367,6 +373,9 @@
     .textoCyR{
         visibility:visible;
     }
+    .imagenFondo{
+        width: 25%;
+    }
 
 }
 
@@ -397,6 +406,9 @@
         margin: 0;
         top: -60%;
     }
+    .imagenFondo{
+        width: 20%;
+    }
 }
 
 @media (min-width: 1200px){
@@ -410,6 +422,9 @@
         padding: 0;
         margin: 0;
         top: -60%;
+    }
+    .imagenFondo{
+        width: 15%;
     }
 
 }
@@ -447,7 +462,7 @@
         .dropdown{
             visibility: hidden;
         }
-        .icon10{
-            
+        .imagenFondo{
+            width: 10%;
         }
 }

@@ -558,7 +558,9 @@ header {
   .textoCyR {
     visibility: hidden; }
   .textoCategorias {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .imagenFondo {
+    width: 50%; } }
 
 @media (min-width: 500px) {
   .header_menu {
@@ -606,7 +608,9 @@ header {
   .textoCyR {
     visibility: hidden; }
   .icon10 {
-    justify-content: center; } }
+    justify-content: center; }
+  .imagenFondo {
+    width: 30%; } }
 
 @media (min-width: 768px) {
   header {
@@ -632,7 +636,9 @@ header {
     margin: 0;
     top: -60%; }
   .textoCyR {
-    visibility: visible; } }
+    visibility: visible; }
+  .imagenFondo {
+    width: 25%; } }
 
 @media (min-width: 992px) {
   header {
@@ -652,7 +658,9 @@ header {
   .dropdown {
     padding: 0;
     margin: 0;
-    top: -60%; } }
+    top: -60%; }
+  .imagenFondo {
+    width: 20%; } }
 
 @media (min-width: 1200px) {
   header {
@@ -662,7 +670,9 @@ header {
   .dropdown {
     padding: 0;
     margin: 0;
-    top: -60%; } }
+    top: -60%; }
+  .imagenFondo {
+    width: 15%; } }
 
 @media (min-width: 1570px) {
   header {
@@ -685,4 +695,6 @@ header {
   .logoMercadoPago {
     width: 10%; }
   .dropdown {
-    visibility: hidden; } }
+    visibility: hidden; }
+  .imagenFondo {
+    width: 10%; } }
