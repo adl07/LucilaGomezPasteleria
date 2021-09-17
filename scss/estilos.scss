@@ -2,9 +2,8 @@
 @import "estructura";
 .texto{
     color: $color_texto;
-}
-.texto:hover{
-    color: $color_botones;
+    &:hover{
+        color: $color_botones;}
 }
 .textoCyR{
     @extend .texto;
@@ -14,9 +13,8 @@
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Noto Sans', sans-serif;
-}
-.header_menu:hover{
-    color: white;
+    &:hover{
+        color: white;}
 }
 .fondo{
     background-color: $color_header;
@@ -45,27 +43,25 @@
     border: none;
     width: 150px; 
     transition: 0 5ms ease;
+    &:hover{
+        color: $color_botones;
+        background-color: transparent;}
 }
-.botonDePedido:hover{
-    color: $color_botones;
-    background-color: transparent;
-}
+
 .botonDeSi{
     background-color: $color_botones;
     color: $color_texto;
-}
-.botonDeSi:hover{
-    color:$color_letra_botones;
-    background-color: $color_botones;
+    &:hover{
+        color:$color_letra_botones;
+        background-color: $color_botones;}
 }
 .botonDeNo{
     background-color: $color_botones;
     color: $color_texto;
     border: none;
-}
-.botonDeNo:hover{
-    color:$color_letra_botones;
-    background-color: $color_botones;
+    &:hover{
+        color:$color_letra_botones;
+        background-color: $color_botones;}
 }
 .botonEnviar{
     background-color: transparent;
@@ -78,9 +74,8 @@
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     color: $color_wpp_ig;
-}
-.textoCategorias:hover{
-    color: $color_wpp_ig;
+    &:hover{
+        color: $color_wpp_ig;}
 }
 //Media Query 350//
 @media (min-width:350px){
