@@ -23,29 +23,28 @@
 }
 .botonDeInicio{
     color: #6c757d;
-    background-color: #f3c4fb;
     border: none;
     font-size: 20px;
     box-shadow: none;
-}
-.botonDeInicio{
     background: transparent;
-    box-shadow: none;
-    border: none;
+    font-family: 'Urbanist', sans-serif;
+}
+.icon10{
+    font-size: 18px;
+    color: $color_botones;
+    &:hover{
+        color: $color_wpp_ig;}
 }
 .opciones{
     @extend .botonDeInicio;
     font-size: 15px;
     text-decoration: none;
-}
-.icon10{
-    font-size: 18px;
-    color: $color_texto;
     &:hover{
-        background: none;}
+        color: $color_wpp_ig;}
 }
-.opciones:hover{
-    color: $color_wpp_ig;
+.opciones4{
+    @extend .opciones;
+    @extend .botonDeInicio;
 }
 .efecto{
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .095);
@@ -77,9 +76,9 @@
 
 }
 .lugar{
-    color: $color_texto;
+    color: $color_botones;
     font-size: 15px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Urbanist', sans-serif;
 }
 .icon7{
     color: $color_texto;
@@ -103,21 +102,29 @@
     }
 }
 .footer-s{
-    color: $color_texto;
+    color: $color_botones;
     top: 58%;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     &:hover{
         color: $color_botones;}
 }
 .footer-Seguinos{
-    color: $color_texto;
-    font-size: 15px;
+    color: $color_botones;
+    font-size: 18px;
+    font-family: 'Urbanist', sans-serif;
 }
 .footer-c{
-    color: $color_texto;
+    color: $color_botones;
     font-size: 15px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    
 }
 .textoOpc{
     cursor: pointer;
+}
+.textoIndx{
+    font-family: 'Urbanist', sans-serif;
+}
+.mediaMenu{
+    font-family: 'Urbanist', sans-serif;
 }

@@ -6,13 +6,22 @@
         color: $color_botones;}
 }
 .textoCyR{
-    @extend .texto;
+    color: $color_botones;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: 0.2s;
+    font-family: 'Urbanist', sans-serif;
+    &:hover{
+        background: #c8b6ff;
+        transition-delay: 0.2s;
+        color: $color_wpp_ig;
+    }
 }
 .header_menu{
-    color:$color_texto;
+    color:$color_botones;
     text-transform: uppercase;
     font-size: 18px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Francois One', sans-serif;
     &:hover{
         color: white;}
 }
@@ -47,7 +56,6 @@
         color: $color_botones;
         background-color: transparent;}
 }
-
 .botonDeSi{
     background-color: $color_botones;
     color: $color_texto;
@@ -71,7 +79,7 @@
     cursor: pointer;
 }
 .textoCategorias{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-size: 18px;
     color: $color_wpp_ig;
     &:hover{
@@ -144,9 +152,12 @@
     .imagenFondo{
         width: 50%;
     }
+    .nombreLogo{
+        width: 30%;
+    }
 }
 //Media Query 500//
-@media (min-width: 500px) {
+@media (min-width: 500px){
     .header_menu{
         font-size: 10px;
         text-align: center;
@@ -215,15 +226,13 @@
     .imagenFondo{
         width: 30%;
     }
+
 }
+    
 //Media Query 768//
 @media (min-width: 768px) {
     header{
-        font-size: 12px;
-    }
-    .header_menu{
-        font-size: 12px;
-        visibility: hidden;
+        font-size: 15px;
     }
     footer{
         font-size: 14px;
@@ -254,6 +263,18 @@
     }
     .imagenFondo{
         width: 25%;
+    }
+    .opciones4{
+        visibility: hidden;
+    }
+    .nombreLogo{
+        width: 50%;
+    }
+    .footer-c{
+        text-align: end;
+    }
+    .lugar{
+        text-align: start;
     }
 
 }
@@ -287,6 +308,12 @@
     .imagenFondo{
         width: 20%;
     }
+    .footer-c{
+        text-align: end;
+    }
+    .lugar{
+        text-align: start;
+    }
 }
 //Media Query 1200//
 @media (min-width: 1200px){
@@ -294,52 +321,60 @@
         font-size: 15px;
     }
     .header_menu{
-        visibility: hidden;
+        visibility: visible;
     }
     .dropdown{
         padding: 0;
         margin: 0;
         top: -60%;
+        visibility: hidden;
     }
     .imagenFondo{
         width: 15%;
     }
+    .footer-c{
+        text-align: end;
+    }
+    .lugar{
+        text-align: start;
+    }
 
 }
 //Media Query 1570//
-@media (min-width: 1570px) { 
-        header{
-            font-size: 15px;
-        }
-        .header_menu{
-            font-size: 15px;
-            visibility: visible;
-        }
-        .footer-c{
-            text-align: end;
-        }
-        .lugar{
-            text-align: start;
-        }
-        .textoIndx{
-            font-size: 15px;
-        } 
-        .illustracion{
-            width: 400px;
-        }
-        .textoUbicacion{
-            font-size: 15px;
-        }
-        .imagenKeep{
-            width: 50%;
-        }
-        .logoMercadoPago{
-            width: 10%;
-        }
-        .dropdown{
-            visibility: hidden;
-        }
-        .imagenFondo{
-            width: 10%;
-        }
+@media (min-width: 1570px){
+    header{
+        font-size: 15px;
+    }
+    .header_menu{
+        font-size: 15px;
+        visibility: visible;
+    }
+    .footer-c{
+        text-align: end;
+    }
+    .lugar{
+        text-align: start;
+    }
+    .textoIndx{
+        font-size: 15px;
+    } 
+    .illustracion{
+        width: 400px;
+    }
+    .textoUbicacion{
+        font-size: 15px;
+    }
+    .imagenKeep{
+        width: 50%;
+    }
+    .logoMercadoPago{
+        width: 10%;
+    }
+    .dropdown{
+        visibility: hidden;
+    }
+    .imagenFondo{
+        width: 10%;
+    }
+
 }
