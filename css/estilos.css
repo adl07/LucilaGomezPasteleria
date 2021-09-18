@@ -4,6 +4,9 @@ body {
 header {
   color: #6c757d; }
 
+.fondo6 {
+  background: linear-gradient(to right, #C9D6FF, #E2E2E2); }
+
 * {
   margin: 0;
   padding: 0; }
@@ -253,7 +256,7 @@ header {
   .imagenFondo {
     width: 50%; }
   .nombreLogo {
-    width: 30%; } }
+    width: 35%; } }
 
 @media (min-width: 500px) {
   .header_menu {
@@ -404,4 +407,6 @@ header {
   .dropdown {
     visibility: hidden; }
   .imagenFondo {
-    width: 10%; } }
+    width: 10%; }
+  .nombreLogo {
+    width: 35%; } }
