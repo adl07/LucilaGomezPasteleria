@@ -151,22 +151,6 @@ header {
 .fondo {
   background-color: #f3c4fb; }
 
-.fondo2 {
-  background-image: url(../imagenes/macarons.jpg);
-  background-size: cover; }
-
-.fondo3 {
-  background-image: url(../imagenes/masitas.jpg);
-  background-size: cover; }
-
-.fondo4 {
-  background-image: url(../imagenes/pasteleriajpg.jpg);
-  background-size: cover; }
-
-.fondo5 {
-  background-image: url(../imagenes/reposteria3.jpg);
-  background-size: cover; }
-
 .fuente {
   font-family: 'Noto Sans', sans-serif; }
 
@@ -179,20 +163,17 @@ header {
     color: #283845;
     background-color: transparent; }
 
-.botonDeSi {
+.botonDeSi, .botonDeNo {
   background-color: #283845;
-  color: #6c757d; }
-  .botonDeSi:hover {
+  color: #6c757d;
+  font-family: 'Urbanist', sans-serif; }
+  .botonDeSi:hover, .botonDeNo:hover {
     color: #6fffe9;
     background-color: #283845; }
 
-.botonDeNo {
-  background-color: #283845;
-  color: #6c757d;
-  border: none; }
-  .botonDeNo:hover {
-    color: #6fffe9;
-    background-color: #283845; }
+.botonDeNo:hover {
+  color: #6fffe9;
+  background-color: #283845; }
 
 .botonEnviar {
   background-color: transparent; }

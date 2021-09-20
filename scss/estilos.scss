@@ -28,22 +28,6 @@
 .fondo{
     background-color: $color_header;
 }
-.fondo2{
-    background-image: url(../imagenes/macarons.jpg);
-    background-size: cover;
-}
-.fondo3{
-    background-image: url(../imagenes/masitas.jpg);
-    background-size: cover;
-}
-.fondo4{
-    background-image: url(../imagenes/pasteleriajpg.jpg);
-    background-size: cover;
-}
-.fondo5{
-    background-image: url(../imagenes/reposteria3.jpg);
-    background-size: cover;
-}
 .fuente{
     font-family: 'Noto Sans', sans-serif;
 }
@@ -59,14 +43,13 @@
 .botonDeSi{
     background-color: $color_botones;
     color: $color_texto;
+    font-family: 'Urbanist', sans-serif;
     &:hover{
         color:$color_letra_botones;
         background-color: $color_botones;}
 }
 .botonDeNo{
-    background-color: $color_botones;
-    color: $color_texto;
-    border: none;
+    @extend .botonDeSi;
     &:hover{
         color:$color_letra_botones;
         background-color: $color_botones;}
